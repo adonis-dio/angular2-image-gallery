@@ -11,7 +11,7 @@ export class GalleryService {
       .subscribe(response => this.images = response.json());
   }
 
-  getFriends() {
+  getImages() {
     return this.http.request('./data/images.json')
       .map(res => res.json());
   }

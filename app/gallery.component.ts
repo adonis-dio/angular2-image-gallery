@@ -23,7 +23,7 @@ export class GalleryComponent {
     isSelected;
 
     constructor(private _galleryService: GalleryService) {
-        this.images = _galleryService.getFriends();
+        this.images = _galleryService.getImages();
     }
 
     select(image){
